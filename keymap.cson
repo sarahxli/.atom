@@ -30,7 +30,7 @@
   'ctrl-E': 'editor:select-to-end-of-line'
   'ctrl-x': 'editor:backspace-to-beginning-of-line' #delete to BOL
   'ctrl-k': 'editor:cut-to-end-of-line' #delete to EOL
-  # Selection
+  # Move selection
   'cmd-ctrl-p': 'editor:move-line-up'
   'cmd-ctrl-n': 'editor:move-line-down'
   # File
