@@ -1,0 +1,29 @@
+# Just for sake of use 1 key less during million times invoke command palette.
+'.platform-darwin, .platform-darwin .command-palette .editor':
+  'cmd-p': 'command-palette:toggle'
+
+# Ensure Emacs cursor operation setup
+'.editor':
+#   Move
+  # Characters
+  'ctrl-f': 'core:move-right' #forward
+  'ctrl-b': 'core:move-left' #backward
+  # Words
+  'alt-f': 'editor:move-to-beginning-of-word' #forward
+  'alt-b': 'editor:move-to-end-of-word' #backward
+  # Lines
+  'ctrl-n': 'core:move-up' #forward
+  'ctrl-p': 'core:move-down' #backward
+  # Sentences
+  'alt-a': 'editor:move-to-first-character-of-line' #forward
+  'alt-w': 'editor:move-to-end-of-screen-line' #backward
+  # 'alt-r': Currently apple used to insert ´ to start an insertion for accented
+  # characters. Don't know how to bypass or disable it atm.
+  # End/Start of line
+  'ctrl-a': 'editor:move-to-beginning-of-line' #forward
+  'ctrl-w': 'editor:move-to-end-of-line' #backward
+  # Selection
+  'cmd-ctrl-n': 'editor:move-line-up' #forward
+  'cmd-ctrl-p': 'editor:move-line-down' #backward
+
+# Continue: http://www.rgrjr.com/emacs/emacs_cheat.html
