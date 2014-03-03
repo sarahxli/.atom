@@ -40,19 +40,18 @@
   'alt-p N': 'core:select-to-bottom'
 
 # Next set up proper vim mode
-
 # Tree view
 '.tree-view':
-  'k': 'core:move-up'
-  'j': 'core:move-down'
+  'j': 'core:move-up'
+  'k': 'core:move-down'
   'a': 'tree-view:add'
-  'd': 'tree-view:delete'
+  'd': 'tree-view:remove'
   'm': 'tree-view:move'
-  'ctrl-0': 'tree-view:toggle-focus'
-  'ctrl-c': 'tree-view:copy-full-path'
-  'ctrl-o': 'tree-view:open-selected-entry'
-  'ctrl-[': 'tree-view:collapse-directory'
-  'ctrl-]': 'tree-view:expand-directory'
-  'ctrl-|': 'tree-view:reveal-active-file'
+  'c': 'tree-view:copy-full-path'
+  'o': 'tree-view:open-selected-entry'
+  'u': 'tree-view:collapse-directory'
+  'i': 'tree-view:expand-directory'
 '.platform-darwin':
-  'cmd-\\': 'tree-view:toggel'
+  'ctrl-\'': 'tree-view:toggle-focus'
+  'cmd-\\' : 'tree-view:toggle'
+  'cmd-|'  : 'tree-view:reveal-active-file'
