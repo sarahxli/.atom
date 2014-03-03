@@ -2,7 +2,7 @@
 '.platform-darwin, .platform-darwin .command-palette .editor':
   'cmd-p': 'command-palette:toggle'
 
-# Ensure Emacs cursor operation setup with some extra stuff i added
+# Cursor operation setup based on Emacs
 '.editor':
   # Characters
   'ctrl-b': 'core:move-left' #move backward
@@ -40,3 +40,19 @@
   'alt-p N': 'core:select-to-bottom'
 
 # Next set up proper vim mode
+
+# Tree view
+'.tree-view':
+  'k': 'core:move-up'
+  'j': 'core:move-down'
+  'a': 'tree-view:add'
+  'd': 'tree-view:delete'
+  'm': 'tree-view:move'
+  'ctrl-0': 'tree-view:toggle-focus'
+  'ctrl-c': 'tree-view:copy-full-path'
+  'ctrl-o': 'tree-view:open-selected-entry'
+  'ctrl-[': 'tree-view:collapse-directory'
+  'ctrl-]': 'tree-view:expand-directory'
+  'ctrl-|': 'tree-view:reveal-active-file'
+'.platform-darwin':
+  'cmd-\\': 'tree-view:toggel'
