@@ -22,8 +22,6 @@
   'showInvisibles': true
   'showIndentGuide': false
   'showLineNumbers': true
-  'softWarp': true
-  'softWrapAtPreferredLineLength': true
   'tabLength': 2
   'softWrap': true
 'core':
