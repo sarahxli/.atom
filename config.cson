@@ -10,7 +10,7 @@
   'fontSize': 16
   'autoIndent': true
   'autoIndentOnPaste': true
-  'nonWordCharacters': '-_/:\''
+  'nonWordCharacters': '-_/:\'"'
   'fontFamily': 'Monaco'
   'invisibles': [
     'tab'
