@@ -7,10 +7,9 @@
 'metrics':
   'userId': '8a092eaf7f10b8c7b624b71851713d90282fabb5'
 'editor':
-  'fontSize': 16
   'autoIndent': true
   'autoIndentOnPaste': true
-  'nonWordCharacters': '-_/:\'"'
+  'nonWordCharacters': '(){}[]"\':/-_,'
   'fontFamily': 'Monaco'
   'invisibles': [
     'tab'
@@ -26,6 +25,7 @@
   'softWarp': true
   'softWrapAtPreferredLineLength': true
   'tabLength': 2
+  'softWrap': true
 'core':
   'disablePackages': []
   'excludeVcsIgnoredPaths': true
@@ -46,3 +46,9 @@
   ]
 'autocomplete':
   'includeCompletionsFromAllBuffers': true
+'spell-check':
+  'grammars': [
+    'source.gfm'
+    'text.git-commit'
+    'text.plain'
+  ]
