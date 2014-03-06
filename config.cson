@@ -9,7 +9,7 @@
 'editor':
   'autoIndent': true
   'autoIndentOnPaste': true
-  'nonWordCharacters': '(){}[]"\':/-_,'
+  'nonWordCharacters': '(){}[]"\':/-_.,<>'
   'fontFamily': 'Monaco'
   'invisibles': [
     'tab'

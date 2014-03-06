@@ -28,13 +28,13 @@ body:
   # Lines
   'ctrl-p': 'core:move-up'       # move backward
   'ctrl-n': 'core:move-down'     # move forward
-  'ctrl-K': 'editor:delete-line' # delete whole line
   'ctrl-X': 'editor:cut-line'    # cut whole line # not working atm #'ctrl-X': 'editor:select-line;core:cut'
+  'ctrl-K': 'editor:delete-line' # delete whole line
   'ctrl-l': 'editor:select-line' # select whole line
   # Sentences and End/Start of line
   'ctrl-a': 'editor:move-to-first-character-of-line'   # move backward, twice move-to-beginning-of-line
   'ctrl-e': 'editor:move-to-end-of-line'               # move forward
-  'ctrl-x': 'editor:backspace-to-beginning-of-line'    # delete backward to BOL
+  'ctrl-backspace': 'editor:backspace-to-beginning-of-line'    # delete backward to BOL
   'ctrl-k': 'editor:cut-to-end-of-line'                # delete forward to EOL
   'ctrl-A': 'editor:select-to-first-character-of-line' # select backward
   'ctrl-E': 'editor:select-to-end-of-line'             # select forward
