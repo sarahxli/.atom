@@ -58,8 +58,8 @@ body:
   'alt-cmd-z': 'editor:checkout-head-revision'
   'alt-cmd-ctrl-f': 'editor:fold-selection'
   'cmd-<': 'editor:scroll-to-cursor'
-  'cmd-enter': 'editor:newline-below'
-  'cmd-shift-enter': 'editor:newline-above'
+  'ctrl-enter': 'editor:newline-below'
+  'ctrl-shift-enter': 'editor:newline-above'
   'cmd-j': 'editor:join-line'
   'cmd-D': 'editor:duplicate-line'
   'cmd-L': 'editor:split-selections-into-lines'
@@ -77,17 +77,20 @@ body:
   'cmd-k cmd-7': 'editor:fold-at-indent-level-7'
   'cmd-k cmd-8': 'editor:fold-at-indent-level-8'
   'cmd-k cmd-9': 'editor:fold-at-indent-level-9'
+  # Git difff
+  'alt-k': 'git-diff:move-to-next-diff'
+  'alt-j': 'git-diff:move-to-previous-diff'
 # Tree View
 '.tree-view':
-  'j': 'core:move-up'
-  'k': 'core:move-down'
+  'k': 'core:move-up'
+  'j': 'core:move-down'
+  'h': 'tree-view:collapse-directory'
+  'l': 'tree-view:expand-directory'
   'a': 'tree-view:add'
   'd': 'tree-view:remove'
   'm': 'tree-view:move'
   'c': 'tree-view:copy-full-path'
   'o': 'tree-view:open-selected-entry'
-  'u': 'tree-view:collapse-directory'
-  'i': 'tree-view:expand-directory'
 # Misc
 '.platform-darwin':
   'ctrl-\'': 'tree-view:toggle-focus'
