@@ -1,7 +1,7 @@
 'exception-reporting':
   'userId': '099d31a8-9536-3b2e-3a87-b4d575942070'
 'release-notes':
-  'viewedVersion': '0.65.0'
+  'viewedVersion': '0.71.0'
 'welcome':
   'showOnStartup': false
 'metrics':
@@ -9,7 +9,7 @@
 'editor':
   'autoIndent': true
   'autoIndentOnPaste': true
-  'nonWordCharacters': '(){}[]"\':/-_.,<>'
+  'nonWordCharacters': '(){}[]"\':/-.,<>'
   'fontFamily': 'Monaco'
   'invisibles': [
     'tab'
@@ -34,6 +34,9 @@
     '.svn'
     '.DS_Store'
   ]
+  'disabledPackages': [
+    'easy-vim-mode'
+  ]
 'fuzzyFinder':
   'ignoredNames': []
 'whitespace':
@@ -54,3 +57,5 @@
     'text.git-commit'
     'text.plain'
   ]
+'vim-mode':
+  'commandModeInputViewFontSize': 16

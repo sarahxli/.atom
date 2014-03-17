@@ -1,104 +1,22 @@
-# Just for sake of use 1 key less during million times invoke command palette.
-'.platform-darwin, .platform-darwin .command-palette .editor':
+# Misc
+'.platform-darwin':
   'cmd-p': 'command-palette:toggle'
+  'ctrl-\\': 'tree-view:toggle-focus'
+  'ctrl-cmd-G': 'styleguide:show' # Style Guide
 
-body:
-  'ctrl-s': 'core:save',
-  'ctrl-S': 'core:save-as',
-  'ctrl-alt-s': 'window:save-all',
-
-# Cursor operation setup Emacs like
 '.editor':
-  # Characters
-  'ctrl-b': 'core:move-left'     # move backward
-  'ctrl-f': 'core:move-right'    # move forward
-  'ctrl-h': 'core:backspace'     # delete backward
-  'ctrl-d': 'core:delete'        # delete forward
-  'ctrl-B': 'core:select-left'   # select backward
-  'ctrl-F': 'core:select-right'  # select forward
-  'ctrl-w': 'editor:select-word' # select word
-  # Words
-  'alt-b': 'editor:move-to-beginning-of-word'      # move backward
-  'alt-f': 'editor:move-to-end-of-word'            # move forward
-  'alt-h': 'editor:backspace-to-beginning-of-word' # delete backward
-  'alt-d': 'editor:delete-to-end-of-word'          # delete forward
-  'alt-B': 'editor:select-to-beginning-of-word'    # select backward
-  'alt-F': 'editor:select-to-end-of-word'          # select forward
-  'alt-w': 'editor:select-word' # select word
-  # Lines
-  'ctrl-p': 'core:move-up'       # move backward
-  'ctrl-n': 'core:move-down'     # move forward
-  'ctrl-X': 'editor:cut-line'    # cut whole line # not working atm #'ctrl-X': 'editor:select-line;core:cut'
-  'ctrl-K': 'editor:delete-line' # delete whole line
-  'ctrl-l': 'editor:select-line' # select whole line
-  # Sentences and End/Start of line
-  'ctrl-a': 'editor:move-to-first-character-of-line'   # move backward, twice move-to-beginning-of-line
-  'ctrl-e': 'editor:move-to-end-of-line'               # move forward
-  'ctrl-backspace': 'editor:backspace-to-beginning-of-line'    # delete backward to BOL
-  'ctrl-k': 'editor:cut-to-end-of-line'                # delete forward to EOL
-  'ctrl-A': 'editor:select-to-first-character-of-line' # select backward
-  'ctrl-E': 'editor:select-to-end-of-line'             # select forward
-  # File (added)
-  'ctrl-g p': 'core:move-to-top'      # move backward
-  'ctrl-g n': 'core:move-to-bottom'   # move forward
-  'ctrl-G p': 'core:select-to-top'    # select backward
-  'ctrl-G n': 'core:select-to-bottom' # select forward
-  # Base control
-  'ctrl-x': 'core:cut'
-  'ctrl-c': 'core:copy'
-  'ctrl-v': 'core:paste'
-  'ctrl-z': 'core:undo',
-  'ctrl-Z': 'core:redo',
-  'ctrl-/': 'editor:toggle-line-comments'
-  'ctrl-]': 'editor:indent-selected-rows'
-  'ctrl-[': 'editor:outdent-selected-rows'
-  'ctrl-cmd-p': 'editor:move-line-up'
-  'ctrl-cmd-n': 'editor:move-line-down'
-  # '.editor:not(.mini)':
-  'alt-cmd-z': 'editor:checkout-head-revision'
-  'alt-cmd-ctrl-f': 'editor:fold-selection'
-  'cmd-<': 'editor:scroll-to-cursor'
-  'ctrl-enter': 'editor:newline-below'
-  'ctrl-shift-enter': 'editor:newline-above'
-  'cmd-j': 'editor:join-line'
-  'cmd-D': 'editor:duplicate-line'
-  'cmd-L': 'editor:split-selections-into-lines'
-  'cmd-alt-[': 'editor:fold-current-row'
-  'cmd-alt-]': 'editor:unfold-current-row'
-  'cmd-alt-{': 'editor:fold-all'
-  'cmd-alt-}': 'editor:unfold-all'
-  'cmd-k cmd-0': 'editor:unfold-all'
-  'cmd-k cmd-1': 'editor:fold-at-indent-level-1'
-  'cmd-k cmd-2': 'editor:fold-at-indent-level-2'
-  'cmd-k cmd-3': 'editor:fold-at-indent-level-3'
-  'cmd-k cmd-4': 'editor:fold-at-indent-level-4'
-  'cmd-k cmd-5': 'editor:fold-at-indent-level-5'
-  'cmd-k cmd-6': 'editor:fold-at-indent-level-6'
-  'cmd-k cmd-7': 'editor:fold-at-indent-level-7'
-  'cmd-k cmd-8': 'editor:fold-at-indent-level-8'
-  'cmd-k cmd-9': 'editor:fold-at-indent-level-9'
   # Git difff
   'alt-k': 'git-diff:move-to-next-diff'
   'alt-j': 'git-diff:move-to-previous-diff'
+
 # Tree View
 '.tree-view':
-  'k': 'core:move-up'
-  'j': 'core:move-down'
   'h': 'tree-view:collapse-directory'
   'l': 'tree-view:expand-directory'
+  'j': 'core:move-down'
+  'k': 'core:move-up'
   'a': 'tree-view:add'
   'd': 'tree-view:remove'
   'm': 'tree-view:move'
   'c': 'tree-view:copy-full-path'
   'o': 'tree-view:open-selected-entry'
-# Misc
-'.platform-darwin':
-  'ctrl-\'': 'tree-view:toggle-focus'
-  'cmd-\'': 'tree-view:toggle-focus'
-  'cmd-\\' : 'tree-view:toggle'
-  'cmd-|'  : 'tree-view:reveal-active-file'
-  'ctrl-g g': 'go-to-line:toggle'
-  'ctrl-cmd-G': 'styleguide:show' # Style Guide
-  'ctrl-cmd-L': 'grammar-selector:show' # Grammar/language type Selector
-
-# Next set up proper vim mode
